@@ -1,0 +1,8 @@
+compile_pdf:
+  image: tianon/latex
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  script:- pandoc -t beamer --template=presentation.beamer 01_intro.md -o 01_intro.pdfartifacts:
+    paths:
+      - 01_intro.pdf
+

@@ -1,0 +1,16 @@
+name: performance-minicourse
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.6
+  - numpy>=1.17
+  - matplotlib>=3.0
+  - pandas>=0.24
+  - scipy>=1.2
+  - jupyterlab>=1.2
+  - plumbum>=1.6.6
+  - numba>=0.46
+  - numexpr>=2.7
+  - tensorflow>=1.13
+  - dask
+  - distributed
