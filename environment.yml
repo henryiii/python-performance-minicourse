@@ -14,3 +14,8 @@ dependencies:
   - tensorflow>=1.13
   - dask
   - distributed
+  - nb_conda_kernels
+  - line_profiler
+  - ipywidgets
+  - nodejs
+  - ipympl
