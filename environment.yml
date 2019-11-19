@@ -19,3 +19,4 @@ dependencies:
   - ipywidgets
   - nodejs
   - ipympl
+  - graphviz
