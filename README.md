@@ -1,5 +1,5 @@
 # High Performance Python
-## Princeton minicourse
+## Princeton mini-course
 ### By Henry Schreiner, with Jim Pivarski
 
 ## Installation
@@ -48,3 +48,6 @@ conda env update -f environment.yml
 * [05 Distributed](./05_distributed.ipynb): An exploration of ways to break up code (fractal) into chunks for multithreading, multiproccessing, and Dask distribution.
 * [06 Tensorflow](./06_tensorflow.ipynb): A look at implementing a Negative Log Likelihood function (used for unbinned fitting) in Numpy and Google's Tensorflow.
 * [07 Callables](./07_callables.ipynb): A look at Scipy's LowLevelCallable, and how to implement one with Numba.
+
+
+Class participants: please complete [the survey here](https://forms.gle/B8muBQu7WeYZjpNB7).
