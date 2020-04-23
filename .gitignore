@@ -1,1 +1,3 @@
 *.ipynb_checkpoints
+dask-worker-space/*
+mydask.png
