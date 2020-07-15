@@ -2,7 +2,7 @@ name: performance-minicourse
 channels:
   - conda-forge
 dependencies:
-  - python >=3.7
+  - python >=3.8
   - numpy >=1.18
   - matplotlib >=3
   - pandas >=1
@@ -14,9 +14,12 @@ dependencies:
   - tensorflow >=1.13
   - dask
   - distributed
-  - nb_conda_kernels
   - line_profiler
   - ipywidgets
   - nodejs
   - ipympl
   - python-graphviz
+  - nb_conda_kernels
+  - jupyterlab_code_formatter
+  - black
+  - isort
