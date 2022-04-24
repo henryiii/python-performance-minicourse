@@ -1,0 +1,39 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: "v4.2.0"
+  hooks:
+  - id: check-added-large-files
+  - id: check-case-conflict
+  - id: check-merge-conflict
+  - id: check-symlinks
+  - id: check-yaml
+  - id: debug-statements
+  - id: end-of-file-fixer
+  - id: mixed-line-ending
+  - id: requirements-txt-fixer
+  - id: trailing-whitespace
+
+- repo: https://github.com/psf/black
+  rev: 22.3.0
+  hooks:
+  - id: black-jupyter
+    args: [--target-version=py310]
+
+- repo: https://github.com/kynan/nbstripout
+  rev: 0.5.0
+  hooks:
+    - id: nbstripout
+
+- repo: https://github.com/codespell-project/codespell
+  rev: "v2.1.0"
+  hooks:
+  - id: codespell
+    args: ["-L", "hist,whet"]
+
+- repo: local
+  hooks:
+  - id: disallow-caps
+    name: Disallow improper capitalization
+    language: pygrep
+    entry: PyBind|Numpy|Cmake|CCache|Github|PyTest
+    exclude: .pre-commit-config.yaml
