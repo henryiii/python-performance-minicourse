@@ -2,14 +2,14 @@ name: performance-minicourse
 channels:
   - conda-forge
 dependencies:
-  - python >=3.8
+  - python >=3.10
   - numpy >=1.18
   - matplotlib >=3
   - pandas >=1
   - scipy >=1.2
   - jupyterlab >=2
   - plumbum >=1.6.9
-  - numba >=0.49
+  - numba >=0.50
   - numexpr >=2.7
   - tensorflow >=1.13
   - dask
