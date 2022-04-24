@@ -28,7 +28,8 @@ repos:
   rev: "v2.1.0"
   hooks:
   - id: codespell
-    args: ["-L", "hist,whet"]
+    args: ["-L", "nd,hist,whet"]
+    exclude: \.csv$
 
 - repo: local
   hooks:
