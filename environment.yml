@@ -3,15 +3,15 @@ channels:
   - conda-forge
 dependencies:
   - python >=3.10
-  - numpy >=1.18
-  - matplotlib >=3
-  - pandas >=1
-  - scipy >=1.2
-  - jupyterlab >=2
-  - plumbum >=1.6.9
-  - numba >=0.50
-  - numexpr >=2.7
-  - tensorflow >=1.13
+  - numpy >=1.21
+  - matplotlib >=3.5
+  - pandas >=1.4
+  - scipy >=1.8
+  - jupyterlab >=3
+  - plumbum >=1.7
+  - numba >=0.55
+  - numexpr >=2.8
+  - jax >=0.3
   - dask
   - distributed
   - line_profiler
