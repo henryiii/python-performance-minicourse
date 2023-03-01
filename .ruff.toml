@@ -32,5 +32,6 @@ extend-ignore = [
   "I001",   # Hard to get write with IPython
   "ARG001", # Needs hiding in one file
   "PD008",  # False positive with Jax
+  "F704",   # await outside function (allowed in IPython)
 ]
 target-version = "py38"
