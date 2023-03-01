@@ -13,11 +13,11 @@ repos:
   - id: requirements-txt-fixer
   - id: trailing-whitespace
 
-    #- repo: https://github.com/nbQA-dev/nbQA
-    #rev: 1.6.3
-    #hooks:
-    #- id: nbqa-ruff
-    #  additional_dependencies: [ruff==0.0.253]
+- repo: https://github.com/nbQA-dev/nbQA
+  rev: 1.6.3
+  hooks:
+  - id: nbqa-ruff
+    additional_dependencies: [ruff==0.0.253]
 
 - repo: https://github.com/psf/black
   rev: 23.1.0
