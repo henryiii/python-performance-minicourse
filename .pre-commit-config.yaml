@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: "v4.2.0"
+  rev: "v4.4.0"
   hooks:
   - id: check-added-large-files
   - id: check-case-conflict
@@ -13,19 +13,25 @@ repos:
   - id: requirements-txt-fixer
   - id: trailing-whitespace
 
+    #- repo: https://github.com/nbQA-dev/nbQA
+    #rev: 1.6.3
+    #hooks:
+    #- id: nbqa-ruff
+    #  additional_dependencies: [ruff==0.0.253]
+
 - repo: https://github.com/psf/black
-  rev: 22.3.0
+  rev: 23.1.0
   hooks:
   - id: black-jupyter
-    args: [--target-version=py310]
+    args: [--target-version=py311]
 
 - repo: https://github.com/kynan/nbstripout
-  rev: 0.5.0
+  rev: 0.6.1
   hooks:
     - id: nbstripout
 
 - repo: https://github.com/codespell-project/codespell
-  rev: "v2.1.0"
+  rev: "v2.2.2"
   hooks:
   - id: codespell
     args: ["-L", "nd,hist,whet"]
