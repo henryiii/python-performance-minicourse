@@ -8,6 +8,13 @@
 
 In the minicourse, if you haven't prepared beforehand, please use this link to run online via Binder: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/henryiii/python-performance-minicourse/master?urlpath=lab)
 
+##### Codespaces
+
+GitHub provides 120 core-hours (60 real-time hours if you use the smallest (2-core)  setting) of CodeSpaces usage every month. You can run this in a codespace: [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/henryiii/python-performance-minicourse?quickstart=1)
+
+Note that you should currently start `jupyter lab` manually from the VSCode terminal once it's built (3-5 minutes after starting it for the first time).
+
+
 #### Local install:
 
 If you are reading this at least 10 minutes before the course starts or you have anaconda
