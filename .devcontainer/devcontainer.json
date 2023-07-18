@@ -1,5 +1,18 @@
 {
-	"name": "performance-minicourse",
-    "image": "mambaorg/micromamba",
-    "postCreateCommand": "MAMBA_ALWAYS_YES=true micromamba install -f conda-lock.yml -q"
+  "name": "performance-minicourse",
+  "image": "mambaorg/micromamba",
+  "postCreateCommand": "",
+  "updateContentCommand": "MAMBA_ALWAYS_YES=true micromamba install -f conda-lock.yml -q",
+  "waitFor": "onCreateCommand",
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python"
+      ]
+    }
+  }
 }
