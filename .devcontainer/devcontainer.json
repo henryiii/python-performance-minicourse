@@ -1,0 +1,5 @@
+{
+	"name": "performance-minicourse",
+    "image": "mambaorg/micromamba",
+    "postCreateCommand": "MAMBA_ALWAYS_YES=true micromamba install -f conda-lock.yml -q"
+}

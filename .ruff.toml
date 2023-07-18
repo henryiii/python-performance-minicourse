@@ -24,14 +24,29 @@ select = [
 extend-ignore = [
   "PLR",    # Design related pylint codes
   "E501",   # Line too long
-  "E402",   # Module level import not at top of file
-  "F811",   # Redefinition of usused
-  "PD901",  # df is a bad variable name
-  "B015",   # Pointless comparison
   "NPY002", # Replace legacy random
-  "I001",   # Hard to get write with IPython
-  "ARG001", # Needs hiding in one file
   "PD008",  # False positive with Jax
-  "F704",   # await outside function (allowed in IPython)
 ]
 target-version = "py38"
+
+[per-file-ignores]
+"*.ipynb" = [
+  "B018",    # Useless expression
+  "F811",    # Redefinition of unused
+  "B015",    # Pointless comparison
+  "E402",    # Module level import not at top of file
+  "E703",    # Notebooks often have "pointless" semicolons
+  "I001",    # Hard to get right with IPython
+  "F704",    # await outside function (allowed in IPython)
+  "PLE1142", # await outside async function (allowed in IPython)
+  "PD901",   # df is a bad variable name
+]
+"check.py" = [
+  "F401", # This files does this
+]
+"02_temperatures.ipynb" = [
+  "F401", # Unused import is used in %%timeit
+  "F821", # Can't look inside magic (yet)
+]
+"03_mcmc.ipynb" = ["F821"]
+"08_pandas_covid.ipynb" = ["F821"]
