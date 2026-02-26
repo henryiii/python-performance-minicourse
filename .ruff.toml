@@ -1,5 +1,8 @@
-select = [
-  "E", "F", "W", # flake8
+target-version = "py310"
+show-fixes = true
+
+[lint]
+extend-select = [
   "B",           # flake8-bugbear
   "I",           # isort
   "ARG",         # flake8-unused-arguments
@@ -21,25 +24,18 @@ select = [
   "NPY",         # NumPy specific rules
   "PD",          # pandas-vet
 ]
-extend-ignore = [
-  "PLR",    # Design related pylint codes
-  "E501",   # Line too long
-  "NPY002", # Replace legacy random
-  "PD008",  # False positive with Jax
+ignore = [
+  "PLR",     # Design related pylint codes
+  "E501",    # Line too long
+  "NPY002",  # Replace legacy random
+  "PD008",   # False positive with Jax
+  "PLC2401", # Non-ascii
+  "B905",    # zip() without an explicit strict=
 ]
-target-version = "py38"
 
-[per-file-ignores]
+[lint.per-file-ignores]
 "*.ipynb" = [
-  "B018",    # Useless expression
   "F811",    # Redefinition of unused
-  "B015",    # Pointless comparison
-  "E402",    # Module level import not at top of file
-  "E703",    # Notebooks often have "pointless" semicolons
-  "I001",    # Hard to get right with IPython
-  "F704",    # await outside function (allowed in IPython)
-  "PLE1142", # await outside async function (allowed in IPython)
-  "PD901",   # df is a bad variable name
 ]
 "check.py" = [
   "F401", # This files does this
@@ -49,4 +45,3 @@ target-version = "py38"
   "F821", # Can't look inside magic (yet)
 ]
 "03_mcmc.ipynb" = ["F821"]
-"08_pandas_covid.ipynb" = ["F821"]
