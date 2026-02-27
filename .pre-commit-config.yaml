@@ -30,7 +30,7 @@ repos:
   hooks:
   - id: codespell
     args: ["-L", "nd,hist,whet"]
-    exclude: \.csv$
+    exclude: (\.csv|\.lock)$
 
 - repo: local
   hooks:

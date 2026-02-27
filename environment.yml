@@ -1,26 +1,26 @@
 name: performance-minicourse
 channels:
-  - conda-forge
+- conda-forge
+- nodefaults
 dependencies:
-  - python >=3.10
-  - numpy >=1.22.0
-  - matplotlib >=3.5
-  - pandas >=1.4
-  - scipy >=1.8
-  - jupyterlab >=3
-  - plumbum >=1.7
-  - numba >=0.55
-  - numexpr >=2.8
-  - jax >=0.3
-  - dask
-  - distributed
-  - line_profiler
-  - ipywidgets
-  - nodejs
-  - ipympl
-  - python-graphviz
-  - nb_conda_kernels
-  - jupyterlab_code_formatter
-  - black
-  - isort
-  - rich
+- python >=3.12
+- numpy >=2
+- matplotlib >=3.10
+- pandas >=2
+- scipy >=1.8
+- jupyterlab >=3
+- plumbum >=1.11
+- numba >=0.60
+- numexpr >=2.8
+- jax >=0.3
+- dask *
+- distributed *
+- line_profiler *
+- ipywidgets *
+- ipympl *
+- python-graphviz *
+- nb_conda_kernels *
+- jupyterlab_code_formatter *
+- black *
+- isort *
+- rich *

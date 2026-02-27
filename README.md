@@ -17,9 +17,10 @@ Note that you should currently start `jupyter lab` manually from the VSCode term
 
 #### Local install:
 
-If you are reading this at least 10 minutes before the course starts or you have anaconda
-or miniconda installed, you will probably be best off installing miniconda.
-This way you will keep local edits and will have an environment to play with.
+If you are reading this at least 10 minutes before the course starts or you
+have pixi, anaconda, or miniconda installed, you will probably be best off
+installing miniconda.  This way you will keep local edits and will have an
+environment to play with.
 
 Get the repository:
 
@@ -27,6 +28,16 @@ Get the repository:
 git clone https://github.com/henryiii/python-performance-minicourse.git
 cd python-performance-minicourse
 ```
+
+If you have pixi, just run:
+
+```bash
+pixi run lab
+```
+
+---
+
+If you don't have pixi (it's just a single binary written in Rust), classic instructions follow:
 
 Download and install
 [miniconda](https://docs.conda.io/en/latest/miniconda.html). On macOS with
@@ -55,13 +66,16 @@ conda deactivate
 
 or restart your terminal.
 
+---
 
-> If you want to add a package, modify `environment.yml` then run:
->
-> ```bash
-> conda env update
-> ```
+To keep this in sync, I'm using this to export the pixi environment into
+something conda/mamba can use:
 
+```
+pixi workspace export conda-environment -n performance-minicourse > environment.yml
+```
+
+Binder is using conda.
 
 ## Lessons
 

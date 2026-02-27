@@ -1,18 +1,18 @@
 {
-  "name": "performance-minicourse",
-  "image": "mambaorg/micromamba",
-  "postCreateCommand": "",
-  "updateContentCommand": "MAMBA_ALWAYS_YES=true micromamba install -f conda-lock.yml -q",
-  "waitFor": "onCreateCommand",
-  "customizations": {
-    "codespaces": {
-      "openFiles": []
+    "name": "my-project",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
     },
-    "vscode": {
-      "extensions": [
-        "ms-toolsai.jupyter",
-        "ms-python.python"
-      ]
-    }
-  }
+    "customizations": {
+      "vscode": {
+        "settings": {},
+        "extensions": ["ms-python.python", "astral-sh.ruff", "GitHub.copilot"]
+      }
+    },
+    "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "mounts": ["source=${localWorkspaceFolderBasename}-pixi,target=${containerWorkspaceFolder}/.pixi,type=volume"],
+    "postCreateCommand": "sudo chown vscode .pixi && pixi install"
 }
