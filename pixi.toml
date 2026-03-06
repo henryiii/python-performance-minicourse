@@ -4,18 +4,14 @@ channels = ["conda-forge"]
 platforms = ["linux-64", "osx-arm64", "osx-64"]
 
 [dependencies]
-black = "*"
 dask = "*"
 distributed = "*"
 ipympl = "*"
 ipywidgets = "*"
-isort = "*"
 jax = ">=0.3"
 jupyterlab = ">=3"
-jupyterlab_code_formatter = "*"
 line_profiler = "*"
 matplotlib = ">=3.10"
-nb_conda_kernels = "*"
 numba = ">=0.60"
 numexpr = ">=2.8"
 numpy = ">=2"

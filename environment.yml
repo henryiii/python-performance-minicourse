@@ -3,24 +3,22 @@ channels:
 - conda-forge
 - nodefaults
 dependencies:
-- python >=3.12
-- numpy >=2
-- matplotlib >=3.10
-- pandas >=2
-- scipy >=1.8
-- jupyterlab >=3
-- plumbum >=1.11
-- numba >=0.60
-- numexpr >=2.8
-- jax >=0.3
 - dask *
 - distributed *
-- line_profiler *
-- ipywidgets *
 - ipympl *
+- ipywidgets *
+- jax >=0.3
+- jupyterlab >=3
+- line_profiler *
+- matplotlib >=3.10
+- numba >=0.60
+- numexpr >=2.8
+- numpy >=2
+- pandas >=2
+- plumbum >=1.10
+- pytest *
+- python >=3.12
 - python-graphviz *
-- nb_conda_kernels *
-- jupyterlab_code_formatter *
-- black *
-- isort *
 - rich *
+- scipy >=1.8
+
