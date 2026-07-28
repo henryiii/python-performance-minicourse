@@ -3,3 +3,4 @@ dask-worker-space/*
 mydask.png
 multiproc.py
 *.DS_Store
+tmp.csv

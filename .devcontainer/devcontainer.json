@@ -1,5 +1,5 @@
 {
-    "name": "my-project",
+    "name": "python-performance-minicourse",
     "build": {
       "dockerfile": "Dockerfile",
       "context": ".."
@@ -14,5 +14,5 @@
       "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     "mounts": ["source=${localWorkspaceFolderBasename}-pixi,target=${containerWorkspaceFolder}/.pixi,type=volume"],
-    "postCreateCommand": "sudo chown vscode .pixi && pixi install"
+    "postCreateCommand": "sudo chown vscode .pixi && pixi install && pixi run dot-config"
 }
