@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Binder runs this after building environment.yml.
+# Graphviz ships without a plugin config; dask's .visualize() fails until it is built.
+set -euo pipefail
+dot -c
