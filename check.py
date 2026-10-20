@@ -3,7 +3,7 @@
 import importlib.util
 import sys
 
-assert sys.version_info >= (3, 12), "Python should be 3.12+"
+assert sys.version_info >= (3, 13), "Python should be 3.13+"
 
 
 for lib in ["pandas", "numba", "line_profiler"]:

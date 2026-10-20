@@ -17,7 +17,7 @@ dependencies:
 - pandas >=2
 - plumbum >=1.10
 - pytest *
-- python >=3.12
+- python >=3.13
 - python-graphviz *
 - rich *
 - scipy >=1.15
